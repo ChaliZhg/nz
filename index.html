@@ -1,0 +1,77 @@
+<!doctype>
+<html>
+<head>
+  <link href='css/new.css' rel='stylesheet' type='text/css' />
+  <!-- <link rel="stylesheet" type="text/css" href="css/toggle-switch.css"/> -->
+  <link rel="stylesheet" href="css/trend.css"/>
+  <link href='favicon.png' rel='icon'>
+  <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+  <meta content='text/html; charset=utf-8' http-equiv='content-type' />
+
+  <title>新西兰新冠肺炎COVID-19最新疫情</title>
+  <meta content='新西兰新冠肺炎COVID-19最新疫情' property='og:title' />
+  <meta content='https://teaof.life/corona' property='og:url' />
+  <meta content="Realtime reported Covid-19 infections in New Zealand, 新西兰新冠肺炎COVID-19最新疫情" property='og:description' />
+  <meta content="blog" property="og:type" />
+</head>
+<body>
+  <div class="wrapper">
+<!--       <script src="scripts/d3.min.js"></script>
+      <script src="scripts/topojson.min.js"></script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script> -->
+      <!-- <script src="scripts/datamaps.deu.js"></script> -->
+      <!-- <script src="scripts/p5.min.js"></script> -->
+
+<table style="text-align:center;">
+  <tr>
+    <th><span style="color: #d14f69;">确诊</span></th>
+    <th><span style="color: #70c66b;">治愈</span></th>
+    <th><span style="color: #4D4D4D;">死亡</span></th>
+  </tr>
+  <tr>
+    <td><span id ='total_number' style="color: #d14f69; border: 0px;
+border-style: solid; border-color: #d14f69;">refresh</span></td>
+    <td><span id ='recovery_number' style="color: #70c66b; border: 0px;
+border-style: solid; border-color: #70c66b;">to</span></td>
+    <td><span id ='death_number' style="color: #4D4D4D; border: 0px;
+border-style: solid; border-color: #4D4D4D;">load</span></td>
+  </tr>
+  <tr>
+    <td><span id='infection_increase' style="font-size: 50%;background: #d14f69; color: white;">新增0</span></td>
+    <td><span id='recovery_increase' style="font-size: 50%;background: #70c66b; color: white;">新增0</span></td>
+    <td><span id='death_increase' style="font-size: 50%; background: #4D4D4D; color: white;">新增0</span></td>
+  </tr>
+</table>
+<!--       <label class="switch-light switch-candy" onclick="">
+        <input type="checkbox" checked id="toogle2" checked="=">
+        <span>
+          <span id="yesterday_date" style="font-weight: lighter;">昨天</span>
+          <span id="today_date" style="font-weight: lighter;">最新</span>
+          <a></a>
+        </span>
+      </label> -->
+<!--       <div id="wrap-around" style="text-align: center;">
+        <div id="canvas" style="height: 600px; width: 450px; text-align: left;"></div>
+      </div>
+      <script type="text/javascript" src="scripts/parseData.js"></script> -->
+    <div id="daily_confirmed_trend"></div>
+    <div id="daily_recovered_trend"></div>
+    <div id="daily_death_trend"></div>
+    <script src="scripts/draw_trend.js"></script>
+  <div class="column js-content">
+
+  </div>
+</div>
+  </body>
+  <!-- <footer>数据来源：柏林晨报；数据可视化：生茶</footer> -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64121308-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-64121308-2');
+  </script>
+  </html>

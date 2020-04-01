@@ -1,0 +1,214 @@
+/*@import url(//fonts.googleapis.com/css?family=Open+Sans:400,700);*/
+
+svg {
+  font: 14px 'Open Sans';
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  fill: #000;
+}
+
+.axis .tick line {
+  stroke: rgba(0, 0, 0, 0.1);
+}
+
+.area {
+  stroke-width: 3;
+  fill: rgba(0, 0, 0, 0.2);
+}
+
+.area.outer,
+.legend .outer {
+  fill: rgba(230, 230, 255, 0.8);
+  stroke: rgba(216, 216, 255, 0.8);
+}
+
+.area.inner,
+.legend .inner {
+  fill: rgba(127, 127, 255, 0.8);
+  stroke: rgba(96, 96, 255, 0.8);
+}
+.area.sum0,
+.legend .sum0 {
+  /*fill: rgba(0, 0, 0, 0.2);*/
+  stroke: #34AAEB;
+}
+.area.sum1,
+.legend .sum1 {
+  /*fill: gray;*/
+  stroke: #9151EB;
+}
+.area.sum2,
+.legend .sum2 {
+  /*fill: #E88E98;*/
+  stroke: #E88E98;
+}
+.area.sum3,
+.legend .sum3 {
+  /*fill: #EB366E;*/
+  stroke: #EB366E;
+}
+.area.sum4,
+.legend .sum4 {
+  /*fill: #FFE85E;*/
+  stroke: #FFE85E;
+}
+.area.sum5,
+.legend .sum5 {
+  /*fill: #66CC7C;*/
+  stroke: #66CC7C;
+}
+.area.sum6,
+.legend .sum6 {
+  /*fill: #EE51FF;*/
+  stroke: #EE51FF;
+}
+.area.sum7,
+.legend .sum7 {
+  /*fill: #DCA252;*/
+  stroke: #DCA252;
+}
+.area.sum8,
+.legend .sum8 {
+  /*fill: #51DBD4;*/
+  stroke: #51DBD4;
+}
+.area.sum9,
+.legend .sum9 {
+  /*fill: #AFFF3D;*/
+  stroke: #AFFF3D;
+}
+.area.sum10,
+.legend .sum10 {
+  /*fill: #BDCC2D;*/
+  stroke: #BDCC2D;
+}
+.area.sum11,
+.legend .sum11 {
+  /*fill: #FFCD69;*/
+  stroke: #FFCD69;
+}
+.area.sum12,
+.legend .sum12 {
+  /*fill: #CC8F17;*/
+  stroke: #CC8F17;
+}
+.area.sum13,
+.legend .sum13 {
+  /*fill: #FF975E;*/
+  stroke: #FF975E;
+}
+.area.sum14,
+.legend .sum14 {
+  /*fill: #FF6512;*/
+  stroke: #FF6512;
+}
+.area.sum15,
+.legend .sum15 {
+  /*fill: #FF5EB7;*/
+  stroke: #FF5EB7;
+}
+.area.sum16,
+.legend .sum16 {
+  fill: #CC0E77;
+  stroke: #CC0E77;
+  opacity: 0.2;
+}
+
+.median-line,
+.legend .median-line {
+  fill: none;
+  stroke: #CC0E77;
+  stroke-width: 2;
+}
+
+.area.confirmed,
+.legend .death {
+  fill: #d14f69;
+  stroke: #d14f69;
+  opacity: 0.2;
+}
+
+.confirmed-line,
+.legend .confirmed-line {
+  fill: none;
+  stroke: #d14f69;
+  stroke-width: 2;
+}
+
+.area.recovered,
+.legend .death {
+  fill: #70c66b;
+  stroke: #70c66b;
+  opacity: 0.2;
+}
+
+.recovered-line,
+.legend .recovered-line {
+  fill: none;
+  stroke: #70c66b;
+  stroke-width: 2;
+}
+
+.area.death,
+.legend .death {
+  fill: #4D4D4D;
+  stroke: #4D4D4D;
+  opacity: 0.2;
+}
+
+.death-line,
+.legend .death-line {
+  fill: none;
+  stroke: #4D4D4D;
+  stroke-width: 2;
+}
+
+.legend .legend-bg {
+  fill: rgba(0, 0, 0, 0.2);
+  stroke: rgba(0, 0, 0, 0.5);
+  stroke-width:1;
+}
+
+.legend {
+  font-size: 12px;
+  stroke-width:2.5;
+  fill: rgba(0, 0, 0, 0.2);
+}
+
+.marker.client .marker-bg,
+.marker.client path {
+  fill: rgba(51, 51, 51, 1.0);
+  stroke: #4D4D4D;
+  stroke-width: 3;
+  color: black;
+}
+
+.marker.server .marker-bg,
+.marker.server path {
+  fill: rgba(0, 153, 51, 0.8);
+  stroke: rgba(0, 153, 51, 0.8);
+  stroke-width: 3;
+}
+
+.marker path {
+  fill: none;
+}
+
+.legend text,
+.marker text {
+  fill: white;
+  font-weight: lighter;
+  font-size: small;
+}
+
+.marker text {
+  text-anchor: middle;
+}
